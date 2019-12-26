@@ -1,0 +1,17 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "Simple GraphQL server",
+  "main": "schema.js",
+  "scripts": {
+    "dev:server": "nodemon server.js"
+  },
+  "author": "Ivan Cvitkovic",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "nodemon": "^2.0.2"
+  }
+}
