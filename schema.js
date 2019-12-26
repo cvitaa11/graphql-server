@@ -1,3 +1,4 @@
+const axios = require("axios");
 const {
   GraphQLObjectType,
   GraphQLInt,
@@ -6,13 +7,6 @@ const {
   GraphQLSchema,
   GraphQLList
 } = require("graphql");
-
-//dummy data
-const users = [
-  { id: 1, name: "James Hetfield", email: "james@metallica.com", age: 45 },
-  { id: 2, name: "Lars Ulrich", email: "lars.ulrich@metallica.com", age: 50 },
-  { id: 3, name: "Kirk Hammet", email: "kirk.hammer@metallica.com", age: 46 }
-];
 
 //UserType
 const UserType = new GraphQLObjectType({
@@ -35,17 +29,17 @@ const RootQuery = new GraphQLObjectType({
         id: { type: GraphQLInt }
       },
       resolve(parentValue, args) {
-        for (let i = 0; i < users.length; i++) {
-          if (users[i].id == args.id) {
-            return users[i];
-          }
-        }
+        axios
+          .get("http://localhost:3000/users/" + args.id)
+          .then(Response => Response.data);
       }
     },
     users: {
       type: new GraphQLList(UserType),
       resolve(parentValue, args) {
-        return users;
+        axios
+          .get("http://localhost:3000/users")
+          .then(Response => Response.data);
       }
     }
   }

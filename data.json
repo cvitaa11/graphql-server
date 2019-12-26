@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "James Hetfield",
+      "email": "james@metallica.com",
+      "age": 45
+    },
+    {
+      "id": 2,
+      "name": "Lars Ulrich",
+      "email": "lars.ulrich@metallica.com",
+      "age": 50
+    },
+    {
+      "id": 3,
+      "name": "Kirk Hammet",
+      "email": "kirk.hammer@metallica.com",
+      "age": 46
+    },
+    {
+      "id": 4,
+      "name": "Robert Trujilo",
+      "email": "robert@metallica.com",
+      "age": 52
+    },
+    {
+      "id": 5,
+      "name": "Dave Lombardo",
+      "email": "dlombardo@slayer.com",
+      "age": 51
+    },
+    {
+      "id": 6,
+      "name": "Ozzy Osbourne",
+      "email": "ozzy@blacksabbath.com",
+      "age": 71
+    }
+  ]
+}
