@@ -35,6 +35,12 @@
       "name": "Ozzy Osbourne",
       "email": "ozzy@blacksabbath.com",
       "age": 71
+    },
+    {
+      "name": "Jimmy Page",
+      "email": "jimmypage@zeppelin.com",
+      "age": 72,
+      "id": 7
     }
   ]
 }
