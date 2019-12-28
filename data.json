@@ -33,14 +33,8 @@
     {
       "id": 6,
       "name": "Ozzy Osbourne",
-      "email": "ozzy@blacksabbath.com",
+      "email": "ozzy@black-sabbath.com",
       "age": 71
-    },
-    {
-      "name": "Jimmy Page",
-      "email": "jimmypage@zeppelin.com",
-      "age": 72,
-      "id": 7
     }
   ]
 }
