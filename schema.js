@@ -29,7 +29,7 @@ const RootQuery = new GraphQLObjectType({
         id: { type: GraphQLInt }
       },
       resolve(parentValue, args) {
-        axios
+        return axios
           .get("http://localhost:3000/users/" + args.id)
           .then(Response => Response.data);
       }
@@ -37,7 +37,7 @@ const RootQuery = new GraphQLObjectType({
     users: {
       type: new GraphQLList(UserType),
       resolve(parentValue, args) {
-        axios
+        return axios
           .get("http://localhost:3000/users")
           .then(Response => Response.data);
       }
